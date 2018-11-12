@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div>
+        <h1>What's the weather ?</h1>
+    </div>
+    <div class="formu">
+        <label for="city" class="labelCity">Your city : </label>
+        <input id="city" class="input" type="text" name="city" value="" placeholder="Entrez votre ville">
+        <br />
+        <button onClick="getTemp()" type="button" class="buttonCity">Go !</button>
+    </div>
+    <br />
+    <div>
+        <p id="result"></p>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
